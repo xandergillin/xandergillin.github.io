@@ -21,13 +21,13 @@ const CONFIG = {
   // BASICS — name, contact, headshot
   // =========================================================
 
-  name: "Jane Cartographer",
+  name: "Xander Gillin",
   tagline: "GIS Analyst & Community-Engaged Cartographer",
-  location: "Richmond, Virginia",
+  location: "Bryn Mawr, Pennsylvania",
 
-  email:    "jane.cartographer@example.com",
-  github:   "https://github.com/yourusername",
-  linkedin: "https://linkedin.com/in/yourusername",
+  email:    "xandergillin@richmond.edu",
+  github:   "https://github.com/xandergillin",
+  linkedin: "https://www.linkedin.com/in/xander-gillin-1a8193346/",
   website:  "",   // leave as "" to hide
 
   headshot: "images/headshot.svg",
@@ -38,7 +38,7 @@ const CONFIG = {
   // 1-2 sentences. Keep it punchy.
   // =========================================================
 
-  shortBio: `Senior at the University of Richmond studying Geography
+  shortBio: `Junior at the University of Richmond studying Geography
              and Data Science, focused on open spatial data, community
              cartography, and making maps that answer real questions.`,
 
@@ -49,24 +49,24 @@ const CONFIG = {
   // To split into paragraphs, use \n\n between them.
   // =========================================================
 
-  longBio: `I am a senior at the University of Richmond studying Geography
+  longBio: `I am a Junior at the University of Richmond studying Geography
             and Data Science. My work focuses on using open spatial data
             to answer questions that communities are actually asking.
 
-            In 2024 I interned with the City of Richmond's Office of
-            Sustainability, where I built a series of tree-equity
-            dashboards now used by neighborhood groups to advocate for
-            plantings on underserved blocks. I have also worked on a
-            statistical analysis of margins of error in American
-            Community Survey data, a project I am co-authoring with
-            two faculty members at UR.
+            In 2026 I interned with the University of Richmond's Geography
+            Department, where I worked on statistical analysis of margins of 
+            error in American Community Survey data and created a series of
+            detailed maps visualizing our findings. I am currently
+            co-authoring this project with a faculty member at the University 
+            of Flordia.
 
-            Outside of GIS, I write a small newsletter about urban
-            history in the upper South, and I am slowly teaching
-            myself to make decent sourdough.
+            Outside of GIS, I am an avid painter and run a customizable ski glove
+            business in my free time. I am also a self taught musician and play
+            small performances at the University of Richmond under the band name
+            "pennydog". 
 
-            I am graduating in May 2026 and am looking for full-time
-            roles in spatial analysis, planning support, or applied
+            I am graduating in May 2028 and am looking for full-time
+            roles in spatial analysis, cartography, or applied
             research.`,
 
 
