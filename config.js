@@ -39,10 +39,10 @@ const CONFIG = {
   // =========================================================
 
   shortBio: `Junior at the University of Richmond studying Geography
-             and Data Science, focused on open spatial data, community
-             cartography, and making maps that answer real questions.`,
+             and Data Science, focused on open spatial data, cartography, 
+             and making maps that answer real questions.`,
 
-
+   
   // =========================================================
   // LONG BIO — used on the About page
   // 3-6 paragraphs. Write like a human, not a resume.
