@@ -39,8 +39,8 @@ const CONFIG = {
   // =========================================================
 
   shortBio: `Junior at the University of Richmond studying Geography
-             and Data Science, focused on open spatial data, cartography, 
-             and making maps that answer real questions.`,
+             and Data Science, focused on open spatial data, community
+             cartography, and making maps that answer real questions.`,
 
    
   // =========================================================
