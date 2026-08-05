@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#ebe6dc"/>
+  <g stroke="#c0b9a8" stroke-width="1" fill="none">
+    <line x1="0" y1="100" x2="800" y2="100"/><line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/><line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/><line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/><line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/><line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+  <g fill="#4a6b3a" opacity="0.55">
+    <circle cx="150" cy="180" r="40"/><circle cx="220" cy="210" r="28"/>
+    <circle cx="180" cy="260" r="35"/><circle cx="600" cy="380" r="55"/>
+    <circle cx="680" cy="420" r="40"/><circle cx="640" cy="460" r="32"/>
+    <circle cx="400" cy="150" r="25"/><circle cx="450" cy="500" r="38"/>
+  </g>
+  <g fill="#c0392b" opacity="0.5">
+    <circle cx="380" cy="320" r="18"/><circle cx="320" cy="380" r="22"/>
+    <circle cx="280" cy="440" r="16"/><circle cx="500" cy="280" r="20"/>
+  </g>
+  <text x="40" y="560" font-family="monospace" font-size="13" fill="#4a4642">JACKSON WARD · CANOPY ANALYSIS</text>
+</svg>

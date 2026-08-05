@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-page="">Loading...</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Portfolio · 2026</p>
+        <h1 class="hero-name" data-bind="name"></h1>
+        <p class="hero-tagline" data-bind="tagline"></p>
+        <p class="hero-location">
+          <span class="loc-dot">●</span>
+          <span data-bind="location"></span>
+        </p>
+      </div>
+      <div class="hero-photo">
+        <img data-bind="headshot" alt="" />
+      </div>
+    </div>
+    <div class="hero-rule"></div>
+  </section>
+
+  <!-- SHORT BIO + CTA -->
+  <section class="intro">
+    <div class="section-head">
+      <span class="section-num">01</span>
+      <h2 class="section-title">Hello</h2>
+    </div>
+    <p class="intro-text" data-bind="shortBio"></p>
+    <p class="intro-cta">
+      <a class="link-primary" href="about.html">More about me →</a>
+    </p>
+  </section>
+
+  <!-- FEATURED PROJECTS -->
+  <section class="projects">
+    <div class="section-head">
+      <span class="section-num">02</span>
+      <h2 class="section-title">Selected Work</h2>
+      <a class="section-aside" href="projects.html">See all →</a>
+    </div>
+    <div class="project-list" data-bind="projects" data-mode="featured"></div>
+  </section>
+
+  <!-- CONTACT TEASE -->
+  <section class="contact-tease">
+    <div class="section-head">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Get in Touch</h2>
+    </div>
+    <p class="contact-lead" data-bind="contactLead"></p>
+    <p class="intro-cta">
+      <a class="link-primary" href="contact.html">All the ways to reach me →</a>
+    </p>
+  </section>
+
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="components.js"></script>
+</body>
+</html>

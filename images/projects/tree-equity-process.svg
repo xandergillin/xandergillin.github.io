@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <rect width="1200" height="400" fill="#f4f0e8"/>
+  <g font-family="monospace" font-size="13" fill="#1a1816">
+    <rect x="60" y="140" width="200" height="120" fill="#ebe6dc" stroke="#1a1816" stroke-width="1.5"/>
+    <text x="160" y="180" text-anchor="middle" font-weight="600">LIDAR canopy</text>
+    <text x="160" y="200" text-anchor="middle" font-size="11" fill="#4a4642">VGIN 2021</text>
+    <text x="160" y="220" text-anchor="middle" font-size="11" fill="#4a4642">1m raster</text>
+    <line x1="270" y1="200" x2="320" y2="200" stroke="#c0392b" stroke-width="2"/>
+    <polygon points="320,200 312,195 312,205" fill="#c0392b"/>
+    <rect x="330" y="140" width="200" height="120" fill="#ebe6dc" stroke="#1a1816" stroke-width="1.5"/>
+    <text x="430" y="180" text-anchor="middle" font-weight="600">Parcel snap</text>
+    <text x="430" y="200" text-anchor="middle" font-size="11" fill="#4a4642">Python +</text>
+    <text x="430" y="220" text-anchor="middle" font-size="11" fill="#4a4642">rasterstats</text>
+    <line x1="540" y1="200" x2="590" y2="200" stroke="#c0392b" stroke-width="2"/>
+    <polygon points="590,200 582,195 582,205" fill="#c0392b"/>
+    <rect x="600" y="140" width="200" height="120" fill="#ebe6dc" stroke="#1a1816" stroke-width="1.5"/>
+    <text x="700" y="180" text-anchor="middle" font-weight="600">Block aggregation</text>
+    <text x="700" y="200" text-anchor="middle" font-size="11" fill="#4a4642">deviation from</text>
+    <text x="700" y="220" text-anchor="middle" font-size="11" fill="#4a4642">city median</text>
+    <line x1="810" y1="200" x2="860" y2="200" stroke="#c0392b" stroke-width="2"/>
+    <polygon points="860,200 852,195 852,205" fill="#c0392b"/>
+    <rect x="870" y="140" width="240" height="120" fill="#c0392b" stroke="#1a1816" stroke-width="1.5"/>
+    <text x="990" y="180" text-anchor="middle" fill="#f4f0e8" font-weight="600">Priority ranking</text>
+    <text x="990" y="200" text-anchor="middle" font-size="11" fill="#f0d8d4">weighted by</text>
+    <text x="990" y="220" text-anchor="middle" font-size="11" fill="#f0d8d4">population density</text>
+    <text x="60" y="100" font-size="11" letter-spacing="1" fill="#8a847c">PIPELINE OVERVIEW</text>
+  </g>
+</svg>

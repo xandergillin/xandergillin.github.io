@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ============================================================ -->
+<!-- EDIT THIS: The page title that shows in the browser tab.     -->
+<!-- ============================================================ -->
+<title data-page="Tree Equity in Jackson Ward">Loading...</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<main>
+
+  <!-- ================================================================== -->
+  <!--  EDIT EVERYTHING BELOW. This whole file is one project's case      -->
+  <!--  study. The structure is: header, hero image, the story, methods,  -->
+  <!--  findings, tools, next steps, and a back link.                     -->
+  <!--                                                                    -->
+  <!--  To make a NEW project page: copy this whole file, rename it       -->
+  <!--  (e.g., project-your-name.html), and change everything.            -->
+  <!--                                                                    -->
+  <!--  Then make sure your config.js lists this filename as the          -->
+  <!--  project's "detailPage".                                           -->
+  <!-- ================================================================== -->
+
+
+  <!-- PROJECT HEAD -->
+  <section class="project-head">
+    <p class="page-eyebrow">Case study · 2025</p>
+    <h1 class="page-title">Tree Equity in Jackson Ward</h1>
+    <p class="project-subtitle">
+      A block-by-block canopy analysis built with the Historic Jackson Ward
+      Association, now used by city arborists to prioritize plantings.
+    </p>
+    <ul class="project-meta-row">
+      <li><span class="meta-label">Role</span><span class="meta-value">Lead analyst</span></li>
+      <li><span class="meta-label">Partners</span><span class="meta-value">HJWA, City of Richmond</span></li>
+      <li><span class="meta-label">Timeline</span><span class="meta-value">Summer 2024 - Spring 2025</span></li>
+      <li><span class="meta-label">Tools</span><span class="meta-value">ArcGIS Pro, Python, MapLibre</span></li>
+    </ul>
+  </section>
+
+
+  <!-- HERO IMAGE / MAP -->
+  <!-- This is the showcase image at the top. Use your best map. -->
+  <!-- For an embedded interactive map, see the iframe snippet in EXTENSIONS.md -->
+  <section class="project-hero">
+    <figure>
+      <img src="images/projects/tree-equity-hero.svg"
+           alt="Canopy gap map of Jackson Ward, with red flags marking priority blocks" />
+      <figcaption>
+        Block-level canopy gap, expressed as the difference between
+        current canopy and the citywide median. Red flags mark the
+        ten highest-priority blocks for new plantings.
+      </figcaption>
+    </figure>
+  </section>
+
+
+  <!-- THE STORY (problem -> approach -> what i found) -->
+  <section class="project-prose">
+
+    <h2 class="prose-h2">The question</h2>
+    <p>
+      Jackson Ward is one of the most historically significant Black
+      neighborhoods in the American South, and like many redlined
+      neighborhoods, it has roughly half the tree canopy of
+      whiter-and-wealthier blocks just a few minutes' drive away.
+      The Historic Jackson Ward Association had been advocating for
+      a planting program but lacked a block-by-block picture of where
+      the gap was largest.
+    </p>
+    <p>
+      I joined the project in summer 2024 to build that picture and
+      to design something the association could actually take into
+      city council meetings.
+    </p>
+
+    <h2 class="prose-h2">What I did</h2>
+    <p>
+      I started by stitching together three years of LIDAR-derived
+      canopy data from VGIN with the city's parcel layer. The first
+      challenge was that the canopy raster did not line up cleanly
+      with the parcel polygons, so I built a zonal-statistics pipeline
+      in Python that handled the snapping and computed canopy percent
+      per parcel.
+    </p>
+    <p>
+      From there I aggregated to the block level, computed deviation
+      from the citywide median, and ranked blocks by gap size weighted
+      by population density. The HJWA team and I went through the
+      top-30 list together and adjusted for places where a planting
+      would not actually be feasible (an alley, a railroad cut).
+    </p>
+
+    <!-- Inline supporting image -->
+    <figure class="prose-figure">
+      <img src="images/projects/tree-equity-process.svg"
+           alt="Diagram showing the pipeline from LIDAR raster to parcel statistics to block ranking" />
+      <figcaption>The analysis pipeline.</figcaption>
+    </figure>
+
+    <h2 class="prose-h2">What I found</h2>
+    <p>
+      The ten highest-priority blocks are all in the eastern half of
+      the neighborhood, concentrated around 2nd Street. Three of them
+      have less than 4% canopy, against a citywide median of 21%. The
+      final report is now in the hands of the city's urban forestry
+      office, and the first round of plantings happened in November 2024.
+    </p>
+
+    <h2 class="prose-h2">What I learned</h2>
+    <p>
+      The technical analysis turned out to be the easy part. The
+      harder and more interesting part was learning how to present
+      uncertainty to community members who needed to use the results
+      to advocate. The "ranked list" worked far better than the
+      heatmap for that audience, even though the heatmap was the
+      more sophisticated artifact.
+    </p>
+
+  </section>
+
+
+  <!-- LINKS / DELIVERABLES -->
+  <section class="project-links-section">
+    <div class="section-head">
+      <span class="section-num">→</span>
+      <h2 class="section-title">Deliverables</h2>
+    </div>
+    <ul class="link-list">
+      <li>
+        <a href="#" class="link-primary">Interactive map →</a>
+        <span class="link-note">Public web map hosted on GitHub Pages.</span>
+      </li>
+      <li>
+        <a href="#" class="link-primary">GitHub repo →</a>
+        <span class="link-note">Python pipeline, data, and notebooks.</span>
+      </li>
+      <li>
+        <a href="#" class="link-primary">Final report (PDF) →</a>
+        <span class="link-note">12-page summary written for HJWA leadership.</span>
+      </li>
+    </ul>
+  </section>
+
+
+  <!-- BACK TO PORTFOLIO -->
+  <section class="project-back">
+    <a href="projects.html" class="link-primary">← Back to all work</a>
+  </section>
+
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="components.js"></script>
+</body>
+</html>

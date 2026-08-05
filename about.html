@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title data-page="About">Loading...</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header id="site-header" class="site-header"></header>
+
+<main>
+
+  <section class="page-head">
+    <p class="page-eyebrow">Section · 03</p>
+    <h1 class="page-title">About</h1>
+  </section>
+
+  <section class="about-page">
+    <div class="about-page-grid">
+      <div class="about-photo">
+        <img data-bind="headshot" alt="" />
+      </div>
+      <div class="about-prose" data-bind="longBio"></div>
+    </div>
+  </section>
+
+  <section class="cv-section">
+    <div class="section-head">
+      <span class="section-num">i</span>
+      <h2 class="section-title">Experience</h2>
+    </div>
+    <ul class="cv-list" data-bind="experience"></ul>
+  </section>
+
+  <section class="cv-section">
+    <div class="section-head">
+      <span class="section-num">ii</span>
+      <h2 class="section-title">Education</h2>
+    </div>
+    <ul class="cv-list" data-bind="education"></ul>
+  </section>
+
+  <section class="cv-section">
+    <div class="section-head">
+      <span class="section-num">iii</span>
+      <h2 class="section-title">Toolkit</h2>
+    </div>
+    <div class="skill-groups" data-bind="skillGroups"></div>
+  </section>
+
+</main>
+
+<footer id="site-footer" class="site-footer"></footer>
+
+<script src="config.js"></script>
+<script src="components.js"></script>
+</body>
+</html>

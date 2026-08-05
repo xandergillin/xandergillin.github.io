@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <radialGradient id="hot1" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c0392b" stop-opacity="0.85"/>
+      <stop offset="0.5" stop-color="#e08a3c" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#e08a3c" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="hot2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#c0392b" stop-opacity="0.7"/>
+      <stop offset="0.5" stop-color="#e08a3c" stop-opacity="0.4"/>
+      <stop offset="1" stop-color="#e08a3c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="#ebe6dc"/>
+  <g stroke="#c0b9a8" stroke-width="1" opacity="0.6">
+    <path d="M 0 150 Q 200 130 400 180 T 800 200" fill="none"/>
+    <path d="M 0 300 Q 200 280 400 320 T 800 340" fill="none"/>
+    <path d="M 0 450 Q 200 430 400 470 T 800 490" fill="none"/>
+    <path d="M 150 0 Q 130 200 180 400 T 200 600" fill="none"/>
+    <path d="M 400 0 Q 380 200 420 400 T 440 600" fill="none"/>
+    <path d="M 650 0 Q 630 200 670 400 T 690 600" fill="none"/>
+  </g>
+  <ellipse cx="280" cy="240" rx="160" ry="110" fill="url(#hot1)"/>
+  <ellipse cx="560" cy="380" rx="140" ry="100" fill="url(#hot2)"/>
+  <ellipse cx="430" cy="180" rx="80" ry="60" fill="url(#hot2)"/>
+  <text x="40" y="560" font-family="monospace" font-size="13" fill="#4a4642">GAINESVILLE · KDE BANDWIDTH 250M</text>
+</svg>
