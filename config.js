@@ -240,8 +240,8 @@ const CONFIG = {
   // =========================================================
 
   contactLead: `I am open to conversations about GIS, cartography,
-                community-engaged research, and full-time roles
-                starting summer 2026.`,
+                community-engaged research, and internship oppurtunities
+                starting summer 2027.`,
 
 
   // =========================================================
