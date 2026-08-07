@@ -30,7 +30,7 @@ const CONFIG = {
   linkedin: "https://www.linkedin.com/in/xander-gillin-1a8193346/",
   website:  "",   // leave as "" to hide
 
-  headshot: "images/headshot.svg",
+  headshot: "images/headshot.jpg",
 
 
   // =========================================================
@@ -49,25 +49,26 @@ const CONFIG = {
   // To split into paragraphs, use \n\n between them.
   // =========================================================
 
-  longBio: `I am a Junior at the University of Richmond studying Geography
-            and Data Science. My work focuses on using open spatial data
-            to answer questions that communities are actually asking.
+  longBio: `I am a junior at the University of Richmond studying Geography and 
+            Data Science. My work focuses on using open spatial data to answer 
+            questions that communities are actively asking, with an emphasis on 
+            making complex data accessible through clear analysis and visualization.
 
-            In 2026 I interned with the University of Richmond's Geography
-            Department, where I worked on statistical analysis of margins of 
-            error in American Community Survey data and created a series of
-            detailed maps visualizing our findings. I am currently
-            co-authoring this project with a faculty member at the University 
-            of Flordia.
+            In 2026, I interned with the University of Richmond's Department of 
+            Geography, where I conducted statistical analyses of margins of error 
+            in American Community Survey data and produced a series of detailed maps 
+            to communicate our findings. I am currently co-authoring this research 
+            with a faculty member at the University of Florida.
 
-            Outside of GIS, I am an avid painter and run a customizable ski glove
-            business in my free time. I am also a self taught musician and play
-            small performances at the University of Richmond under the band name
-            "pennydog". 
+            Outside of GIS, I enjoy pursuing creative projects. I am an avid painter, 
+            operate a customizable ski glove business, and am a self-taught musician. 
+            I regularly perform at the University of Richmond under the band name 
+            "pennydog." 
 
-            I am graduating in May 2028 and am looking for full-time
-            roles in spatial analysis, cartography, or applied
-            research.`,
+            I will graduate in May 2028 and am seeking full-time opportunities in 
+            spatial analysis, cartography, or applied research. I am especially 
+            interested in roles that combine data analysis, GIS, and visual 
+            communication to help solve real-world problems.`,
 
 
   // =========================================================
@@ -79,16 +80,18 @@ const CONFIG = {
     {
       school: "University of Richmond",
       degree: "B.A., Geography & Data Science",
-      year:   "Expected May 2026",
-      note:   "Honors thesis on canopy equity in Richmond"
+      year:   "Expected May 2028",
     },
     // Add high school, study abroad, certificate programs, etc. here
-    // {
-    //   school: "...",
-    //   degree: "...",
-    //   year:   "...",
-    //   note:   ""
-    // },
+    {
+      study_abroad: "University College Dublin",
+      year:         "Fall 2026",
+    },
+    {
+      highschool: "The Shipley School",
+      degree:     "Highschool Diploma",
+      year:       "2024",
+    },
   ],
 
 
@@ -100,18 +103,12 @@ const CONFIG = {
     {
       role:    "Undergraduate Research Fellow",
       org:     "Spatial Analysis Lab, University of Richmond",
-      years:   "2024 - present",
-      blurb:   "Lead a small team on ACS uncertainty analysis under Dr. Plaxco."
-    },
-    {
-      role:    "GIS Intern",
-      org:     "City of Richmond, Office of Sustainability",
-      years:   "Summer 2024",
-      blurb:   "Built tree-equity dashboards now used by neighborhood groups."
+      years:   "Summer 2026",
+      blurb:   "worked with a small team on ACS uncertainty analysis under Dr. Redican."
     },
   ],
 
-
+   
   // =========================================================
   // SKILLS — used on the About page
   // Grouped by category. Be honest about what you actually know.
@@ -120,20 +117,24 @@ const CONFIG = {
   skillGroups: [
     {
       label: "Desktop GIS",
-      skills: ["ArcGIS Pro", "QGIS", "ArcGIS Online"]
+      skills: ["ArcGIS Pro", "QGIS", "ArcGIS Online", "StoryMaps, "DashBoards", "Field Maps"]
     },
     {
       label: "Programming",
-      skills: ["Python", "R", "SQL", "JavaScript (basic)"]
+      skills: ["Python (basic)" "R"]
     },
     {
       label: "Web mapping",
-      skills: ["Leaflet", "MapLibre GL JS", "Mapbox Studio"]
+      skills: ["OpenStreetMap", "Mapbox Studio"]
     },
     {
       label: "Data & databases",
-      skills: ["PostGIS", "Pandas", "GeoPandas", "Tableau"]
+      skills: ["PostGIS", "Pandas", "GeoPandas"]
     },
+    {
+       label: "Additional",
+       skills: ["Adobe Illustrator", "Microsoft Excel"]
+    }
   ],
 
 
