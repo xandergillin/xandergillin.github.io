@@ -25,10 +25,10 @@ const CONFIG = {
   tagline: "GIS Analyst & Community-Engaged Cartographer",
   location: "Bryn Mawr, Pennsylvania",
 
-  email:    "xandergillin@richmond.edu",
-  github:   "https://github.com/xandergillin",
+  email: "xandergillin@richmond.edu",
+  github: "https://github.com/xandergillin",
   linkedin: "https://www.linkedin.com/in/xander-gillin-1a8193346/",
-  website:  "",   // leave as "" to hide
+  website: "",
 
   headshot: "images/headshot.jpg",
 
@@ -79,19 +79,19 @@ const CONFIG = {
   education: [
     {
       school: "University of Richmond",
-      degree: "B.A., Geography & Data Science",
-      year:   "Expected May 2028",
-    },
-    // Add high school, study abroad, certificate programs, etc. here
-    {
-      study_abroad: "University College Dublin",
-      year:         "Fall 2026",
+      degree: "B.A. Geography & Data Science",
+      year: "Expected May 2028"
     },
     {
-      highschool: "The Shipley School",
-      degree:     "Highschool Diploma",
-      year:       "2024",
+      school: "University College Dublin",
+      degree: "Study Abroad",
+      year: "Fall 2026"
     },
+    {
+      school: "The Shipley School",
+      degree: "High School Diploma",
+      year: "2024"
+    }
   ],
 
 
@@ -99,13 +99,13 @@ const CONFIG = {
   // EXPERIENCE — used on the About page
   // =========================================================
 
-  experience: [
+   experience: [
     {
-      role:    "Undergraduate Research Fellow",
-      org:     "Spatial Analysis Lab, University of Richmond",
-      years:   "Summer 2026",
-      blurb:   "worked with a small team on ACS uncertainty analysis under Dr. Redican."
-    },
+      role: "Undergraduate Research Fellow",
+      org: "Spatial Analysis Lab, University of Richmond",
+      years: "Summer 2026",
+      blurb: "Worked with a small research team on American Community Survey uncertainty analysis under Dr. Redican."
+    }
   ],
 
    
@@ -117,23 +117,43 @@ const CONFIG = {
   skillGroups: [
     {
       label: "Desktop GIS",
-      skills: ["ArcGIS Pro", "QGIS", "ArcGIS Online", "StoryMaps, "DashBoards", "Field Maps"]
+      skills: [
+        "ArcGIS Pro",
+        "QGIS",
+        "ArcGIS Online",
+        "StoryMaps",
+        "Dashboards",
+        "Field Maps"
+      ]
     },
     {
       label: "Programming",
-      skills: ["Python (basic)" "R"]
+      skills: [
+        "Python",
+        "R"
+      ]
     },
     {
-      label: "Web mapping",
-      skills: ["OpenStreetMap", "Mapbox Studio"]
+      label: "Web Mapping",
+      skills: [
+        "Mapbox Studio",
+        "OpenStreetMap"
+      ]
     },
     {
-      label: "Data & databases",
-      skills: ["PostGIS", "Pandas", "GeoPandas"]
+      label: "Data & Databases",
+      skills: [
+        "PostGIS",
+        "Pandas",
+        "GeoPandas"
+      ]
     },
     {
-       label: "Additional",
-       skills: ["Adobe Illustrator", "Microsoft Excel"]
+      label: "Additional",
+      skills: [
+        "Adobe Illustrator",
+        "Microsoft Excel"
+      ]
     }
   ],
 
