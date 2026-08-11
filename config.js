@@ -186,7 +186,7 @@ const CONFIG = {
                     Jackson Ward Association.`,
       tags:        ["ArcGIS Pro", "Python", "MapLibre", "Community-Engaged"],
       detailPage:  "project-tree-equity.html",
-      featured:    true,
+      featured:    false,
     },
 
     {
@@ -194,7 +194,7 @@ const CONFIG = {
       title:       "Hidden Uncertainty in ACS Median Home Value",
       year:        "2026",
       type:        "Spatial Statistics",
-      thumbnail:   "images/projects/my-project-thumb.jpg",
+      thumbnail:   "images/projects/full3x6.jpg",
       blurb:       `A study illustrating the exact magnitude of 
                     error in American Community Survey Median Home Value 
                     estimates through manually calculated county, census tract,
