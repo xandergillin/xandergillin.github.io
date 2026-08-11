@@ -195,11 +195,13 @@ const CONFIG = {
       title:       "Analytical Map Catalogue",
       year:        "2024-2026",
       type:        "Spatial Analysis",
-      thumbnail:   "images/projects/kde-traffic-thumb.svg",
-      blurb:       `A kernel density analysis of three years of
-                    traffic-accident data in Gainesville, Florida, with
-                    an interactive bandwidth control.`,
-      tags:        ["QGIS", "Python", "Leaflet", "KDE"],
+      thumbnail:   "images/projects/IDW1.jpeg",
+      blurb:       `A collection of analytical maps showcasing my work in 
+                    GIS, spatial analysis, and geographic visualization. 
+                    These maps explore patterns, relationships, and change 
+                    across different places and datasets, with an emphasis 
+                    on using maps to communicate meaningful spatial stories.`,
+      tags:        ["ArcGIS Pro", "QGIS", "R", "IDW", "KDE", "Spline", "Krigging", "DEM"],
       detailPage:  "project-kde-traffic.html",
       featured:    true,
     },
@@ -210,11 +212,13 @@ const CONFIG = {
       title:       "Cartographic Map Catalogue",
       year:        "2024-2026",
       type:        "Cartography",
-      thumbnail:   "images/projects/sanborn-mosaic-thumb.svg",
-      blurb:       `Georeferenced and mosaicked a set of 1905 Sanborn fire
-                    insurance maps into a single cloud-optimized GeoTIFF
-                    for use in archival research.`,
-      tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"],
+      thumbnail:   "images/projects/animation2_compressed.gif",
+      blurb:       `A collection of cartographic work exploring the 
+                    intersection of geography, design, and visual communication. 
+                    These maps emphasize thoughtful composition, symbology, 
+                    typography, and visual hierarchy to communicate geographic 
+                    information clearly and effectively.`,
+      tags:        ["ArcGIS Pro", "Adobe Illustrator"],
       detailPage:  "project-sanborn-mosaic.html",
       featured:    true,
     },
