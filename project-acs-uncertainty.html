@@ -27,16 +27,54 @@
 
   <section class="project-hero">
     <figure>
-      <img src="images/projects/BG_InOut_3x32.jpg" alt="VA Counties Block Group Estimates Inside or Outside ACS MoE" />
-      <figcaption>Forest plot of estimate uncertainty across seven health indicators.</figcaption>
+      <img src="images/projects/full3x6.jpg" alt="Parcel and ACS Median Home Value Comparison Across VA Counties" />
+      <figcaption>Map of Our Team's 5-Year MHV Parcel Estimates Within or Outside of ACS 5-Year MHV Estimate Error Bounds Across 3 Counties at Tract and Block Group Level.</figcaption>
     </figure>
   </section>
 
   <section class="project-prose">
     <h2 class="prose-h2">Coming soon</h2>
     <p>
-      This case study is still being written. In the meantime, see the
-      preprint and the code repository linked below.
+      This project asked whether the American Community Survey (ACS) 5-year Median Home Value (MHV) 
+      is a reliable representation of the actual residential housing landscape at the neighborhood 
+      level. Because ACS MHV is based on self-reported values from owner-occupied households, we wanted 
+      to know how closely those estimates matched authoritative property-assessment data. More 
+      specifically, we asked whether ACS estimates accurately represented the full residential landscape 
+      and whether they remained representative when the analysis was restricted to owner-occupied properties.
+
+      We collected annual property-assessment data from Richmond City, Henrico County, and Powhatan County, 
+      representing urban, suburban, and rural settings within the Richmond metropolitan area. Assessment 
+      records from 2018–2024 were converted to constant 2026 dollars and cleaned to remove clearly 
+      non-residential properties and missing or zero values. We then grouped parcels by Census tract and 
+      block group and calculated median home values for comparable periods.
+
+      For Richmond City, where owner and property addresses could be reliably matched, we were also able 
+      to isolate owner-occupied parcels. We compared our parcel-based estimates against ACS 1-year and 5-year 
+      MHV estimates, examining percentage error, ACS margins of error, and correlations between the two datasets.
+
+      The results showed that ACS estimates were strongly correlated with parcel-based home values, with most 
+      correlations falling between roughly 0.82 and 0.96. This means ACS generally captured the relative ordering 
+      of housing values across geographic areas.
+
+      However, correlation did not mean agreement. Across the three 5-year periods, only 17.4% of tract comparisons
+      and 29.2% of block-group comparisons fell within the ACS margin of error. Parcel-based estimates were also 
+      consistently lower than ACS estimates, with median percentage errors of approximately −22.6% at the tract 
+      level and −21.6% at the block-group level.
+
+      The owner-occupied analysis in Richmond City produced a similar result: restricting the administrative data 
+      to owner-occupied properties made the comparison more conceptually equivalent to the ACS, but it did not eliminate 
+      the substantial differences between the two estimates.
+
+      The biggest lesson was that strong correlation and accurate agreement are not the same thing. ACS MHV appears 
+      useful for understanding broad spatial patterns in housing values, but its relatively large differences from 
+      administrative estimates suggest caution when treating it as a precise measure of neighborhood housing values.
+
+      I also learned that administrative data can provide an important way to evaluate survey-based estimates, particularly 
+      when the administrative records can be accurately linked to geography and filtered to match the population being 
+      measured. At the same time, the project demonstrated that data availability and locality-specific record structures
+      strongly influence what questions can actually be answered. Finally, because the study period was affected by COVID-era 
+      housing-market changes, establishing a pre-COVID baseline and testing the approach across additional geographies would be
+      important next steps.
     </p>
   </section>
 
