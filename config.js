@@ -191,14 +191,15 @@ const CONFIG = {
 
     {
       slug:        "acs-uncertainty",
-      title:       "Hidden Uncertainty in ACS Health Data",
-      year:        "2025",
+      title:       "Hidden Uncertainty in ACS Median Home Value",
+      year:        "2026",
       type:        "Spatial Statistics",
-      thumbnail:   "images/projects/acs-uncertainty-thumb.svg",
-      blurb:       `A simulation study showing how margins of error in
-                    American Community Survey estimates propagate through
-                    public-health risk models.`,
-      tags:        ["R", "GLM", "Monte Carlo", "Research"],
+      thumbnail:   "images/projects/my-project-thumb.jpg",
+      blurb:       `A study illustrating the exact magnitude of 
+                    error in American Community Survey Median Home Value 
+                    estimates through manually calculated county, census tract,
+                    and block group level data.`,
+      tags:        ["R", "Big Data", "Research"],
       detailPage:  "project-acs-uncertainty.html",
       featured:    true,
     },
