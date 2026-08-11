@@ -180,7 +180,7 @@ const CONFIG = {
       title:       "Hidden Uncertainty in ACS Median Home Value",
       year:        "2026",
       type:        "Spatial Statistics",
-      thumbnail:   "images/projects/full3x6.jpg",
+      thumbnail:   "images/projects/my-project-thumb.jpg",
       blurb:       `A study illustrating the exact magnitude of 
                     error in American Community Survey Median Home Value 
                     estimates through manually calculated county, census tract,
