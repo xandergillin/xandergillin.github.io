@@ -176,20 +176,6 @@ const CONFIG = {
   projects: [
 
     {
-      slug:        "tree-equity",
-      title:       "Tree Equity in Jackson Ward",
-      year:        "2025",
-      type:        "Community Mapping",
-      thumbnail:   "images/projects/tree-equity-thumb.svg",
-      blurb:       `A block-by-block analysis of canopy gaps in a historically
-                    redlined Richmond neighborhood, built with the Historic
-                    Jackson Ward Association.`,
-      tags:        ["ArcGIS Pro", "Python", "MapLibre", "Community-Engaged"],
-      detailPage:  "project-tree-equity.html",
-      featured:    false,
-    },
-
-    {
       slug:        "acs-uncertainty",
       title:       "Hidden Uncertainty in ACS Median Home Value",
       year:        "2026",
@@ -205,9 +191,9 @@ const CONFIG = {
     },
 
     {
-      slug:        "kde-traffic",
-      title:       "Where the Crashes Cluster",
-      year:        "2024",
+      slug:        "Analytical Maps",
+      title:       "Analytical Map Catalogue",
+      year:        "2024-2026",
       type:        "Spatial Analysis",
       thumbnail:   "images/projects/kde-traffic-thumb.svg",
       blurb:       `A kernel density analysis of three years of
@@ -220,17 +206,17 @@ const CONFIG = {
 
     // Example of a non-featured project (will appear on /projects only):
     {
-      slug:        "sanborn-mosaic",
-      title:       "Stitching the Sanborn Atlases of Richmond",
-      year:        "2023",
-      type:        "Historical GIS",
+      slug:        "Cartogrpahic Maps",
+      title:       "Cartographic Map Catalogue",
+      year:        "2024-2026",
+      type:        "Cartography",
       thumbnail:   "images/projects/sanborn-mosaic-thumb.svg",
       blurb:       `Georeferenced and mosaicked a set of 1905 Sanborn fire
                     insurance maps into a single cloud-optimized GeoTIFF
                     for use in archival research.`,
       tags:        ["ArcGIS Pro", "GDAL", "COG", "Archives"],
       detailPage:  "project-sanborn-mosaic.html",
-      featured:    false,
+      featured:    true,
     },
 
   ],
