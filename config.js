@@ -208,7 +208,7 @@ const CONFIG = {
 
     // Example of a non-featured project (will appear on /projects only):
     {
-      slug:        "Cartogrpahic Maps",
+      slug:        "Cartographic Maps",
       title:       "Cartographic Map Catalogue",
       year:        "2024-2026",
       type:        "Cartography",
@@ -231,7 +231,7 @@ const CONFIG = {
   // =========================================================
 
   contactLead: `I am open to conversations about GIS, cartography,
-                community-engaged research, and internship oppurtunities
+                community-engaged research, and internship opportunities
                 starting summer 2027.`,
 
 
