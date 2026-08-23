@@ -947,3 +947,273 @@ section {
   .contact-lead, .intro-text { font-size: 21px; }
   .project-meta-row { grid-template-columns: 1fr 1fr; gap: 16px; }
 }
+
+/* =========================================
+   CARTOGRAPHIC MAP CATALOGUE
+   ========================================= */
+
+.map-series {
+  width: 100%;
+  margin: 5rem 0 6rem;
+}
+
+
+/* =========================================
+   MAP SLIDER
+   ========================================= */
+
+.map-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+
+/* Individual slides */
+
+.map-slide {
+  display: none;
+
+  grid-template-columns:
+    minmax(0, 2.4fr)
+    minmax(280px, 1fr);
+
+  gap: 4rem;
+
+  align-items: center;
+
+  min-height: 600px;
+
+  padding: 0 5rem;
+}
+
+
+/* Only the current map is visible */
+
+.map-slide.active {
+  display: grid;
+}
+
+
+/* =========================================
+   MAP IMAGE
+   ========================================= */
+
+.map-image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.map-image img {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  max-height: 700px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   DESCRIPTION
+   ========================================= */
+
+.map-description {
+  padding-right: 3rem;
+}
+
+
+.map-number {
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 0.75rem;
+
+  letter-spacing: 0.08em;
+
+  margin-bottom: 1.25rem;
+
+  opacity: 0.55;
+}
+
+
+.map-description h2 {
+  margin-top: 0;
+
+  margin-bottom: 1.5rem;
+}
+
+
+.map-description p {
+  line-height: 1.7;
+}
+
+
+.map-details {
+  margin-top: 2rem;
+
+  font-family: "JetBrains Mono", monospace;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.05em;
+
+  opacity: 0.55;
+}
+
+
+/* =========================================
+   ARROW BUTTONS
+   ========================================= */
+
+.map-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  background: transparent;
+
+  font-family: "Inter Tight", sans-serif;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  padding: 1rem;
+
+  z-index: 10;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.map-arrow:hover {
+  transform:
+    translateY(-50%)
+    scale(1.2);
+
+  opacity: 0.65;
+}
+
+
+.map-prev {
+  left: 0;
+}
+
+
+.map-next {
+  right: 0;
+}
+
+
+/* =========================================
+   DOT NAVIGATION
+   ========================================= */
+
+.map-dots {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 0.7rem;
+
+  margin-top: 2.5rem;
+}
+
+
+.map-dot {
+  width: 8px;
+  height: 8px;
+
+  padding: 0;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: currentColor;
+
+  opacity: 0.25;
+
+  cursor: pointer;
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+
+.map-dot:hover {
+  opacity: 0.55;
+}
+
+
+.map-dot.active {
+  opacity: 1;
+
+  transform: scale(1.3);
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .map-slide {
+
+    grid-template-columns: 1fr;
+
+    gap: 2rem;
+
+    min-height: auto;
+
+    padding: 0 3rem;
+
+  }
+
+
+  .map-description {
+
+    padding-right: 0;
+
+  }
+
+
+  .map-image img {
+
+    max-height: 500px;
+
+  }
+
+
+  .map-arrow {
+
+    font-size: 1.5rem;
+
+  }
+
+
+  .map-prev {
+    left: -0.5rem;
+  }
+
+
+  .map-next {
+    right: -0.5rem;
+  }
+
+}
