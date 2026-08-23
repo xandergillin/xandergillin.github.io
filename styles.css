@@ -949,95 +949,78 @@ section {
 }
 
 /* =========================================
-   MAP CATALOGUES — CARTOGRAPHIC + ANALYTICAL
-   ========================================= */
-
-/*
-   The catalogue slider is deliberately wider than the normal
-   section content so the complete map + information pane is
-   centered on the viewport instead of being pushed left by
-   the site's normal section padding.
-*/
-
-.map-series {
-  width: 100vw;
-  max-width: none;
-  margin: 5rem 0 6rem;
-  margin-left: calc(50% - 50vw);
-  padding: 0 48px;
-  box-sizing: border-box;
-}
-
-
-/* =========================================
-   SLIDER WRAPPER
+   MAP CATALOGUE SLIDER
+   Cartographic + Analytical
    ========================================= */
 
 .map-slider {
-  position: relative;
+    position: relative;
 
-  width: 100%;
-  max-width: 1200px;
+    width: 100%;
+    max-width: 1350px;
 
-  margin: 0 auto;
-  padding: 0 70px;
+    margin: 5rem auto 0;
 
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 
 /* =========================================
-   SLIDE
+   MAP + DESCRIPTION
    ========================================= */
 
 .map-slide {
-  width: 100%;
-  min-height: 620px;
+    position: relative;
 
-  display: none;
+    width: fit-content;
+    max-width: 100%;
 
-  align-items: center;
-  justify-content: center;
+    margin: 0 auto;
 
-  gap: 5rem;
+    display: none;
 
-  margin: 0 auto;
+    grid-template-columns: minmax(500px, 700px) 320px;
+
+    align-items: center;
+
+    column-gap: 5rem;
 }
 
+
 .map-slide.active {
-  display: flex;
+    display: grid;
 }
 
 
 /* =========================================
-   MAP IMAGE
+   MAP
    ========================================= */
 
 .map-slide img {
-  display: block;
+    display: block;
 
-  width: auto;
-  max-width: 560px;
-  height: 600px;
+    width: auto;
 
-  object-fit: contain;
+    max-width: 700px;
 
-  flex: 0 1 560px;
-  margin: 0;
+    height: 600px;
+
+    object-fit: contain;
+
+    margin: 0;
 }
 
 
 /* =========================================
-   DESCRIPTION / CAPTION PANE
+   DESCRIPTION
    ========================================= */
 
 .map-info {
-  width: 280px;
-  max-width: 280px;
-  flex: 0 0 280px;
+    width: 320px;
 
-  text-align: left;
-  margin: 0;
+    margin: 0;
+
+    text-align: left;
 }
 
 
@@ -1046,219 +1029,68 @@ section {
    ========================================= */
 
 .map-arrow {
-  position: absolute;
-
-  top: 50%;
-  transform: translateY(-50%);
-
-  z-index: 20;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  width: 42px;
-  height: 42px;
-
-  border: 1px solid transparent;
-  border-radius: 2px;
-
-  background: transparent;
-  color: var(--ink);
-
-  font-family: 'Inter Tight', system-ui, sans-serif;
-  font-size: 1.6rem;
-  line-height: 1;
-
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-
-  opacity: 1;
-
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease,
-    border-color 0.2s ease;
-}
-
-.map-arrow:hover {
-  transform: translateY(-50%) scale(1.1);
-  opacity: 0.65;
-  border-color: var(--rule);
-}
-
-.map-arrow:focus-visible {
-  outline: 1px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.map-arrow.prev {
-  left: 8px;
-}
-
-.map-arrow.next {
-  right: 8px;
-}
-
-
-/* =========================================
-   DOT NAVIGATION
-   ========================================= */
-
-.map-dots {
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  gap: 8px;
-
-  margin: 1.5rem auto 0;
-  padding: 0;
-}
-
-.map-dot {
-  display: block;
-
-  width: 7px;
-  height: 7px;
-
-  padding: 0;
-  margin: 0;
-
-  border: 0;
-  border-radius: 50%;
-
-  background: var(--ink-faint);
-
-  cursor: pointer;
-  appearance: none;
-  -webkit-appearance: none;
-
-  opacity: 0.55;
-
-  transition:
-    transform 0.2s ease,
-    opacity 0.2s ease,
-    background 0.2s ease;
-}
-
-.map-dot:hover {
-  opacity: 0.9;
-  transform: scale(1.2);
-}
-
-.map-dot.active {
-  background: var(--ink);
-  opacity: 1;
-  transform: scale(1.15);
-}
-
-.map-dot:focus-visible {
-  outline: 1px solid var(--accent);
-  outline-offset: 3px;
-}
-
-
-/* =========================================
-   MOBILE CATALOGUE
-   ========================================= */
-
-@media (max-width: 800px) {
-
-  .map-series {
-    width: 100%;
-    margin-left: 0;
-    padding: 0 16px;
-    box-sizing: border-box;
-  }
-
-  .map-slider {
-    width: 100%;
-    max-width: 100%;
-    padding: 0 42px;
-    margin: 0 auto;
-    box-sizing: border-box;
-  }
-
-  .map-slide {
-    min-height: 0;
-
-    flex-direction: column;
-
-    gap: 1.75rem;
-
-    width: 100%;
-  }
-
-  /* MAP */
-
-  .map-slide img {
-    display: block;
-
-    width: auto;
-    max-width: 100%;
-
-    height: 480px;
-
-    flex: none;
-
-    object-fit: contain;
-
-    margin: 0 auto;
-  }
-
-
-  /* DESCRIPTION */
-
-  .map-info {
-    width: 100%;
-    max-width: 320px;
-
-    flex: none;
-
-    text-align: center;
-
-    margin: 0 auto;
-  }
-
-
-  /* ARROWS */
-
-  .map-arrow {
     position: absolute;
 
-    top: 240px;
+    top: 50%;
 
-    width: 36px;
-    height: 36px;
+    z-index: 20;
 
-    padding: 0;
-
-    font-size: 1.4rem;
+    width: 42px;
+    height: 42px;
 
     display: flex;
 
     align-items: center;
     justify-content: center;
-  }
+
+    padding: 0;
+
+    border: none;
+
+    background: transparent;
+
+    font-family: "Inter Tight", sans-serif;
+
+    font-size: 1.5rem;
+
+    cursor: pointer;
+
+    transform: translateY(-50%);
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease;
+}
 
 
-  .map-arrow.prev {
-    left: 0;
-  }
+/* LEFT ARROW
+   Sits to the left of the map */
+
+.map-arrow.prev {
+    left: calc(50% - 600px);
+}
 
 
-  .map-arrow.next {
-    right: 0;
-  }
+/* RIGHT ARROW
+   Sits to the right of the description */
+
+.map-arrow.next {
+    right: calc(50% - 600px);
+}
 
 
-  /* DOTS */
+.map-arrow:hover {
+    transform: translateY(-50%) scale(1.2);
 
-  .map-dots {
+    opacity: 0.55;
+}
+
+
+/* =========================================
+   DOTS
+   ========================================= */
+
+.map-dots {
     width: 100%;
 
     display: flex;
@@ -1270,7 +1102,174 @@ section {
     gap: 7px;
 
     margin: 1.25rem auto 0;
-  }
+}
+
+
+.map-dot {
+    width: 6px;
+    height: 6px;
+
+    padding: 0;
+
+    border: none;
+
+    border-radius: 50%;
+
+    background: #b8b5ae;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+.map-dot.active {
+    background: #222;
+
+    transform: scale(1.15);
+}
+
+
+/* =========================================
+   TABLET
+   ========================================= */
+
+@media (max-width: 1100px) {
+
+    .map-slider {
+        padding: 0 60px;
+    }
+
+
+    .map-slide {
+        grid-template-columns: minmax(400px, 600px) 280px;
+
+        column-gap: 3rem;
+    }
+
+
+    .map-slide img {
+        max-width: 600px;
+
+        height: 550px;
+    }
+
+
+    .map-info {
+        width: 280px;
+    }
+
+
+    .map-arrow.prev {
+        left: 10px;
+    }
+
+
+    .map-arrow.next {
+        right: 10px;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+    .map-slider {
+        width: 100%;
+
+        max-width: 100%;
+
+        margin: 3rem auto 0;
+
+        padding: 0 42px;
+
+        box-sizing: border-box;
+    }
+
+
+    .map-slide {
+        width: 100%;
+
+        max-width: 100%;
+
+        display: none;
+
+        grid-template-columns: 1fr;
+
+        row-gap: 1.5rem;
+
+        justify-items: center;
+
+        margin: 0 auto;
+    }
+
+
+    .map-slide.active {
+        display: grid;
+    }
+
+
+    /* MAP */
+
+    .map-slide img {
+        width: auto;
+
+        max-width: 100%;
+
+        height: 450px;
+
+        margin: 0 auto;
+
+        object-fit: contain;
+    }
+
+
+    /* DESCRIPTION */
+
+    .map-info {
+        width: 100%;
+
+        max-width: 320px;
+
+        text-align: center;
+
+        margin: 0 auto;
+    }
+
+
+    /* ARROWS */
+
+    .map-arrow {
+        width: 34px;
+        height: 34px;
+
+        font-size: 1.4rem;
+
+        top: 225px;
+    }
+
+
+    .map-arrow.prev {
+        left: 0;
+    }
+
+
+    .map-arrow.next {
+        right: 0;
+    }
+
+
+    /* DOTS */
+
+    .map-dots {
+        margin-top: 1rem;
+    }
 
 }
 
@@ -1281,59 +1280,39 @@ section {
 
 @media (max-width: 480px) {
 
-  .map-series {
-    padding: 0 10px;
-  }
+    .map-slider {
+        padding: 0 36px;
+    }
 
 
-  .map-slider {
-    padding: 0 40px;
-  }
+    .map-slide img {
+        height: 380px;
+    }
 
 
-  .map-slide {
-    gap: 1.5rem;
-  }
+    .map-info {
+        max-width: 280px;
+    }
 
 
-  .map-slide img {
-    height: 400px;
+    .map-arrow {
+        width: 30px;
+        height: 30px;
 
-    max-width: 100%;
-  }
+        font-size: 1.25rem;
 
-
-  .map-info {
-    max-width: 280px;
-
-    text-align: center;
-  }
+        top: 190px;
+    }
 
 
-  .map-arrow {
-    top: 200px;
-
-    width: 32px;
-    height: 32px;
-
-    font-size: 1.25rem;
-  }
+    .map-arrow.prev {
+        left: 0;
+    }
 
 
-  .map-arrow.prev {
-    left: 0;
-  }
-
-
-  .map-arrow.next {
-    right: 0;
-  }
-
-
-  .map-dot {
-    width: 6px;
-    height: 6px;
-  }
+    .map-arrow.next {
+        right: 0;
+    }
 
 }
 
