@@ -2,12 +2,14 @@
 <html lang="en">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title data-page="ACS Uncertainty">Loading...</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
+
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
 <link
@@ -28,9 +30,7 @@
 <main>
 
 
-  <!-- =========================================
-       PROJECT HEADER
-       ========================================= -->
+  <!-- PROJECT HEADER -->
 
   <section class="project-head">
 
@@ -62,7 +62,7 @@
     <div class="research-slider">
 
 
-      <!-- IMAGE 1 -->
+      <!-- IMAGE 1 — YOUR ORIGINAL IMAGE -->
 
       <div class="research-slide active">
 
@@ -74,7 +74,8 @@
       </div>
 
 
-      <!-- IMAGE 2 -->
+
+      <!-- IMAGE 2 — REPLACE FILENAME -->
 
       <div class="research-slide">
 
@@ -86,7 +87,8 @@
       </div>
 
 
-      <!-- IMAGE 3 -->
+
+      <!-- IMAGE 3 — REPLACE FILENAME -->
 
       <div class="research-slide">
 
@@ -98,7 +100,8 @@
       </div>
 
 
-      <!-- IMAGE 4 -->
+
+      <!-- IMAGE 4 — REPLACE FILENAME -->
 
       <div class="research-slide">
 
@@ -110,19 +113,21 @@
       </div>
 
 
-      <!-- IMAGE 5 -->
+
+      <!-- IMAGE 5 — REPLACE FILENAME -->
 
       <div class="research-slide">
 
         <img
           src="images/projects/RichmondPctErrBG.jpg"
-          alt="ACS Median Home Value richmond research map"
+          alt="ACS Median Home Value research map"
         >
 
-      </div>
+      </div>  
 
 
-      <!-- IMAGE 6 -->
+
+      <!-- IMAGE 6 — REPLACE FILENAME -->
 
       <div class="research-slide">
 
@@ -131,10 +136,11 @@
           alt="ACS Median Home Value research map"
         >
 
-      </div>
+      </div>  
 
 
-      <!-- IMAGE 7 -->
+
+      <!-- IMAGE 7 — REPLACE FILENAME -->
 
       <div class="research-slide">
 
@@ -143,13 +149,19 @@
           alt="ACS Median Home Value research map"
         >
 
-      </div>
+      </div>  
 
 
-      <!-- PREVIOUS ARROW -->
+    </div>
+
+
+
+    <!-- ARROWS UNDER IMAGE -->
+
+    <div class="research-navigation">
 
       <button
-        class="research-arrow research-prev"
+        class="research-arrow"
         onclick="changeResearchImage(-1)"
         aria-label="Previous image"
       >
@@ -157,16 +169,13 @@
       </button>
 
 
-      <!-- NEXT ARROW -->
-
       <button
-        class="research-arrow research-next"
+        class="research-arrow"
         onclick="changeResearchImage(1)"
         aria-label="Next image"
       >
         →
       </button>
-
 
     </div>
 
@@ -209,6 +218,7 @@
       by Census tract and block group.
     </p>
 
+
     <p>
       In Richmond City, we also identified owner-occupied parcels to create
       a closer comparison with the ACS. We compared our parcel-based estimates
@@ -225,7 +235,9 @@
       ACS estimates showed strong correlations with parcel-based values,
       generally capturing the spatial pattern of housing values. However,
       the estimates often differed substantially in magnitude. Only
-      <strong>17.4% of tract comparisons and 29.2% of block-group comparisons</strong>
+      <strong>
+        17.4% of tract comparisons and 29.2% of block-group comparisons
+      </strong>
       fell within the ACS margin of error, while parcel-based estimates were
       generally lower than ACS estimates.
     </p>
@@ -236,11 +248,15 @@
     </h3>
 
     <p>
-      The key takeaway was that <strong>strong correlation does not necessarily
-      mean accurate agreement.</strong> ACS MHV can be useful for identifying
-      broad spatial patterns, but researchers should be cautious about treating
-      it as a precise measure of neighborhood housing values.
+      The key takeaway was that
+      <strong>
+        strong correlation does not necessarily mean accurate agreement.
+      </strong>
+      ACS MHV can be useful for identifying broad spatial patterns,
+      but researchers should be cautious about treating it as a precise
+      measure of neighborhood housing values.
     </p>
+
 
     <p>
       The project also showed the value—and limitations—of using administrative
@@ -252,33 +268,7 @@
   </section>
 
 
-
-  <!-- =========================================
-       PROJECT POSTER
-       ========================================= -->
-
-  <section class="project-poster">
-
-    <figure>
-
-      <img
-        src="images/projects/my-project-thumb.jpg"
-        alt="Final project poster presenting findings on uncertainty in ACS Median Home Value estimates"
-      >
-
-      <figcaption>
-        Final project poster summarizing our methods, analysis, and findings.
-      </figcaption>
-
-    </figure>
-
-  </section>
-
-
-
-  <!-- =========================================
-       BACK TO PROJECTS
-       ========================================= -->
+  <!-- BACK TO PROJECTS -->
 
   <section class="project-back">
 
@@ -296,109 +286,86 @@
 
 
 <script src="config.js"></script>
+
 <script src="components.js"></script>
 
 
 <!-- =========================================
-     RESEARCH IMAGE SLIDER JAVASCRIPT
+     IMAGE SLIDER JAVASCRIPT
      ========================================= -->
 
 <script>
 
-  let currentResearchImage = 0;
+let currentResearchImage = 0;
 
-  const researchSlides =
-    document.querySelectorAll(".research-slide");
-
-
-  function showResearchImage(index) {
-
-    /*
-      Go back to the first image
-      after reaching the last image.
-    */
-
-    if (index >= researchSlides.length) {
-
-      currentResearchImage = 0;
-
-    }
+const researchSlides =
+  document.querySelectorAll(".research-slide");
 
 
-    /*
-      Go to the last image if
-      the user goes backward from
-      the first image.
-    */
+function showResearchImage(index) {
 
-    else if (index < 0) {
+  if (index >= researchSlides.length) {
 
-      currentResearchImage =
-        researchSlides.length - 1;
+    currentResearchImage = 0;
 
-    }
+  }
 
+  else if (index < 0) {
 
-    else {
+    currentResearchImage =
+      researchSlides.length - 1;
 
-      currentResearchImage = index;
+  }
 
-    }
+  else {
 
-
-    /*
-      Show only the current image.
-    */
-
-    researchSlides.forEach((slide, i) => {
-
-      slide.classList.toggle(
-        "active",
-        i === currentResearchImage
-      );
-
-    });
+    currentResearchImage = index;
 
   }
 
 
-  /*
-    Change images when an arrow
-    is clicked.
-  */
+  researchSlides.forEach((slide, i) => {
 
-  function changeResearchImage(direction) {
-
-    showResearchImage(
-      currentResearchImage + direction
+    slide.classList.toggle(
+      "active",
+      i === currentResearchImage
     );
 
+  });
+
+}
+
+
+function changeResearchImage(direction) {
+
+  showResearchImage(
+    currentResearchImage + direction
+  );
+
+}
+
+
+/* Keyboard controls */
+
+document.addEventListener("keydown", function(event) {
+
+  if (event.key === "ArrowRight") {
+
+    changeResearchImage(1);
+
   }
 
+  if (event.key === "ArrowLeft") {
 
-  /*
-    Allow keyboard navigation
-    with the left and right arrows.
-  */
+    changeResearchImage(-1);
 
-  document.addEventListener("keydown", function(event) {
+  }
 
-    if (event.key === "ArrowRight") {
-
-      changeResearchImage(1);
-
-    }
-
-    if (event.key === "ArrowLeft") {
-
-      changeResearchImage(-1);
-
-    }
-
-  });
+});
 
 </script>
 
 
 </body>
+
 </html>
