@@ -3,41 +3,416 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-page="Stitching the Sanborn Atlases of Richmond">Loading...</title>
+
+<title data-page="Cartographic Map Catalogue">Loading...</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
 <header id="site-header" class="site-header"></header>
+
 <main>
+
+  <!-- PAGE INTRODUCTION -->
   <section class="project-head">
+
     <p class="page-eyebrow">Catalogue</p>
+
     <h1 class="page-title">Cartographic Map Catalogue</h1>
+
     <p class="project-subtitle">
-                    A collection of cartographic work exploring the 
-                    intersection of geography, design, and visual communication. 
-                    These maps emphasize thoughtful composition, symbology, 
-                    typography, and visual hierarchy to communicate geographic 
-                    information clearly and effectively.
+      A collection of cartographic work exploring the 
+      intersection of geography, design, and visual communication. 
+      These maps emphasize thoughtful composition, symbology, 
+      typography, and visual hierarchy to communicate geographic 
+      information clearly and effectively.
     </p>
+
   </section>
-  <section class="project-hero">
-    <figure>
-      <img src="images/projects/sanborn-mosaic-thumb.svg" alt="Stitching the Sanborn Atlases of Richmond" />
-    </figure>
+
+
+  <!-- MAP SLIDER -->
+  <section class="map-series">
+
+    <div class="map-slider">
+
+
+      <!-- MAP 1 -->
+      <article class="map-slide active">
+
+        <div class="map-image">
+
+          <img 
+            src="images/projects/USFeaturesMap.jpeg" 
+            alt="Description of Map 1"
+          >
+
+        </div>
+
+        <div class="map-description">
+
+          <p class="map-number">01 / 06</p>
+
+          <h2>Map Title One</h2>
+
+          <p>
+            This map explores [describe what the map shows].
+            The composition uses [describe the visual approach,
+            data, or cartographic technique] to communicate
+            [main geographic idea or finding].
+          </p>
+
+          <p class="map-details">
+            ArcGIS Pro · 2026
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- MAP 2 -->
+      <article class="map-slide">
+
+        <div class="map-image">
+
+          <img 
+            src="images/projects/animation2_compresses.gif" 
+            alt="Description of Map 2"
+          >
+
+        </div>
+
+        <div class="map-description">
+
+          <p class="map-number">02 / 06</p>
+
+          <h2>Map Title Two</h2>
+
+          <p>
+            This map examines [describe what the map shows].
+            The visualization emphasizes [main geographic
+            pattern, relationship, or finding].
+          </p>
+
+          <p class="map-details">
+            ArcGIS Pro · 2026
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- MAP 3 -->
+      <article class="map-slide">
+
+        <div class="map-image">
+
+          <img 
+            src="images/projects/Airport.jpeg" 
+            alt="Description of Map 3"
+          >
+
+        </div>
+
+        <div class="map-description">
+
+          <p class="map-number">03 / 06</p>
+
+          <h2>Map Title Three</h2>
+
+          <p>
+            This map focuses on [describe the map].
+            Its design uses [symbology, classification,
+            typography, or other technique] to highlight
+            [main takeaway].
+          </p>
+
+          <p class="map-details">
+            ArcGIS Pro · 2026
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- MAP 4 -->
+      <article class="map-slide">
+
+        <div class="map-image">
+
+          <img 
+            src="images/projects/Maui.jpeg" 
+            alt="Description of Map 4"
+          >
+
+        </div>
+
+        <div class="map-description">
+
+          <p class="map-number">04 / 06</p>
+
+          <h2>Map Title Four</h2>
+
+          <p>
+            This map demonstrates [describe what the map shows].
+            The final composition brings together [describe
+            important cartographic elements or techniques].
+          </p>
+
+          <p class="map-details">
+            ArcGIS Pro · 2026
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- MAP 5 -->
+      <article class="map-slide">
+
+        <div class="map-image">
+
+          <img 
+            src="images/projects/TolkeinZona.jpeg" 
+            alt="Description of Map 5"
+          >
+
+        </div>
+
+        <div class="map-description">
+
+          <p class="map-number">05 / 06</p>
+
+          <h2>Map Title Five</h2>
+
+          <p>
+            This map demonstrates [describe what the map shows].
+            The final composition brings together [describe
+            important cartographic elements or techniques].
+          </p>
+
+          <p class="map-details">
+            ArcGIS Pro · 2026
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- MAP 6 -->
+      <article class="map-slide">
+
+        <div class="map-image">
+
+          <img 
+            src="images/projects/VirginiaCarto.jpeg" 
+            alt="Description of Map 6"
+          >
+
+        </div>
+
+        <div class="map-description">
+
+          <p class="map-number">06 / 06</p>
+
+          <h2>Map Title Six</h2>
+
+          <p>
+            This map demonstrates [describe what the map shows].
+            The final composition brings together [describe
+            important cartographic elements or techniques].
+          </p>
+
+          <p class="map-details">
+            ArcGIS Pro · 2026
+          </p>
+
+        </div>
+
+      </article>
+
+
+      <!-- PREVIOUS BUTTON -->
+      <button 
+        class="map-arrow map-prev" 
+        onclick="changeMap(-1)"
+        aria-label="Previous map"
+      >
+        ←
+      </button>
+
+
+      <!-- NEXT BUTTON -->
+      <button 
+        class="map-arrow map-next" 
+        onclick="changeMap(1)"
+        aria-label="Next map"
+      >
+        →
+      </button>
+
+    </div>
+
+
+    <!-- MAP DOTS -->
+    <div class="map-dots">
+
+      <button 
+        class="map-dot active"
+        onclick="showMap(0)"
+        aria-label="Show map 1"
+      ></button>
+
+      <button 
+        class="map-dot"
+        onclick="showMap(1)"
+        aria-label="Show map 2"
+      ></button>
+
+      <button 
+        class="map-dot"
+        onclick="showMap(2)"
+        aria-label="Show map 3"
+      ></button>
+
+      <button 
+        class="map-dot"
+        onclick="showMap(3)"
+        aria-label="Show map 4"
+      ></button>
+
+    </div>
+
   </section>
-  <section class="project-prose">
-    <h2 class="prose-h2">Coming soon</h2>
-    <p>This case study is still being written.</p>
-  </section>
+
+
+  <!-- BACK TO PROJECTS -->
   <section class="project-back">
-    <a href="projects.html" class="link-primary">← Back to all work</a>
+
+    <a href="projects.html" class="link-primary">
+      ← Back to all work
+    </a>
+
   </section>
+
 </main>
+
+
 <footer id="site-footer" class="site-footer"></footer>
+
+
 <script src="config.js"></script>
 <script src="components.js"></script>
+
+
+<!-- MAP SLIDER JAVASCRIPT -->
+<script>
+
+  let currentMap = 0;
+
+  const maps = document.querySelectorAll(".map-slide");
+  const dots = document.querySelectorAll(".map-dot");
+
+
+  function showMap(index) {
+
+    /*
+      If we go past the last map,
+      return to the first map.
+    */
+
+    if (index >= maps.length) {
+      currentMap = 0;
+    }
+
+    /*
+      If we go before the first map,
+      go to the last map.
+    */
+
+    else if (index < 0) {
+      currentMap = maps.length - 1;
+    }
+
+    else {
+      currentMap = index;
+    }
+
+
+    /*
+      Hide every map except
+      the current one.
+    */
+
+    maps.forEach((map, i) => {
+
+      map.classList.toggle(
+        "active",
+        i === currentMap
+      );
+
+    });
+
+
+    /*
+      Update the active dot.
+    */
+
+    dots.forEach((dot, i) => {
+
+      dot.classList.toggle(
+        "active",
+        i === currentMap
+      );
+
+    });
+
+  }
+
+
+  /*
+    Move forward or backward
+    through the maps.
+  */
+
+  function changeMap(direction) {
+
+    showMap(currentMap + direction);
+
+  }
+
+
+  /*
+    Allow the left and right
+    keyboard arrows to control
+    the catalogue.
+  */
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "ArrowRight") {
+      changeMap(1);
+    }
+
+    if (event.key === "ArrowLeft") {
+      changeMap(-1);
+    }
+
+  });
+
+</script>
+
 </body>
 </html>
