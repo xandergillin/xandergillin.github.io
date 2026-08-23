@@ -1217,3 +1217,142 @@ section {
   }
 
 }
+
+/* =========================================
+    RESEARCH PROJECT IMAGE SLIDER
+    ========================================= */
+
+.research-image-slider {
+  width: 100%;
+  margin: 5rem 0 6rem;
+}
+
+
+.research-slider {
+  position: relative;
+
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
+}
+
+
+/* Individual images */
+
+.research-slide {
+  display: none;
+
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.research-slide.active {
+  display: flex;
+}
+
+
+/* Map image */
+
+.research-slide img {
+  display: block;
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  height: auto;
+
+  max-height: 750px;
+
+  object-fit: contain;
+}
+
+
+/* =========================================
+   ARROWS
+   ========================================= */
+
+.research-arrow {
+  position: absolute;
+
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  border: none;
+
+  background: transparent;
+
+  font-family: "Inter Tight", sans-serif;
+
+  font-size: 2rem;
+
+  cursor: pointer;
+
+  padding: 1rem;
+
+  z-index: 10;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease;
+}
+
+
+.research-arrow:hover {
+  transform:
+    translateY(-50%)
+    scale(1.2);
+
+  opacity: 0.6;
+}
+
+
+.research-prev {
+  left: 1rem;
+}
+
+
+.research-next {
+  right: 1rem;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 800px) {
+
+  .research-image-slider {
+    margin: 3rem 0 4rem;
+  }
+
+
+  .research-slide img {
+    max-height: 500px;
+  }
+
+
+  .research-arrow {
+    font-size: 1.5rem;
+  }
+
+
+  .research-prev {
+    left: 0;
+  }
+
+
+  .research-next {
+    right: 0;
+  }
+
+}
