@@ -949,55 +949,63 @@ section {
 }
 
 /* =========================================
-   CARTOGRAPHIC MAP CATALOGUE
+   MAP CATALOGUES — CARTOGRAPHIC + ANALYTICAL
    ========================================= */
 
+/*
+   The catalogue slider is deliberately wider than the normal
+   section content so the complete map + information pane is
+   centered on the viewport instead of being pushed left by
+   the site's normal section padding.
+*/
+
 .map-series {
-  width: 100%;
+  width: 100vw;
+  max-width: none;
   margin: 5rem 0 6rem;
+  margin-left: calc(50% - 50vw);
+  padding: 0 48px;
+  box-sizing: border-box;
 }
 
 
 /* =========================================
-   CENTER MAP CATALOGUE SLIDER
-   Applies to both Cartographic and Analytical
-   Map Catalogues
+   SLIDER WRAPPER
    ========================================= */
 
 .map-slider {
-    position: relative;
+  position: relative;
 
-    width: 100%;
-    max-width: 1100px;
+  width: 100%;
+  max-width: 1200px;
 
-    margin: 5rem auto 0;
+  margin: 0 auto;
+  padding: 0 70px;
 
-    padding: 0 70px;
-
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 
 /* =========================================
-   SLIDE CONTENT
+   SLIDE
    ========================================= */
 
 .map-slide {
-    width: 100%;
+  width: 100%;
+  min-height: 620px;
 
-    display: none;
+  display: none;
 
-    align-items: center;
-    justify-content: center;
+  align-items: center;
+  justify-content: center;
 
-    gap: 5rem;
+  gap: 5rem;
 
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
-
 .map-slide.active {
-    display: flex;
+  display: flex;
 }
 
 
@@ -1006,16 +1014,16 @@ section {
    ========================================= */
 
 .map-slide img {
-    display: block;
+  display: block;
 
-    width: auto;
-    max-width: 550px;
+  width: auto;
+  max-width: 560px;
+  height: 600px;
 
-    height: 600px;
+  object-fit: contain;
 
-    object-fit: contain;
-
-    margin: 0 auto;
+  flex: 0 1 560px;
+  margin: 0;
 }
 
 
@@ -1024,13 +1032,12 @@ section {
    ========================================= */
 
 .map-info {
-    width: 280px;
+  width: 280px;
+  max-width: 280px;
+  flex: 0 0 280px;
 
-    flex-shrink: 0;
-
-    text-align: left;
-
-    margin: 0 auto;
+  text-align: left;
+  margin: 0;
 }
 
 
@@ -1039,152 +1046,216 @@ section {
    ========================================= */
 
 .map-arrow {
-    position: absolute;
+  position: absolute;
 
-    top: 50%;
+  top: 50%;
+  transform: translateY(-50%);
 
-    transform: translateY(-50%);
+  z-index: 20;
 
-    z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border: none;
+  width: 42px;
+  height: 42px;
 
-    background: transparent;
+  border: 1px solid transparent;
+  border-radius: 2px;
 
-    font-family: "Inter Tight", sans-serif;
+  background: transparent;
+  color: var(--ink);
 
-    font-size: 1.5rem;
+  font-family: 'Inter Tight', system-ui, sans-serif;
+  font-size: 1.6rem;
+  line-height: 1;
 
-    cursor: pointer;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 
-    padding: 1rem;
+  opacity: 1;
 
-    transition:
-        transform 0.2s ease,
-        opacity 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    border-color 0.2s ease;
 }
-
 
 .map-arrow:hover {
-    transform: translateY(-50%) scale(1.2);
-
-    opacity: 0.6;
+  transform: translateY(-50%) scale(1.1);
+  opacity: 0.65;
+  border-color: var(--rule);
 }
 
-
-/* LEFT ARROW */
+.map-arrow:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
 
 .map-arrow.prev {
-    left: 0;
+  left: 8px;
 }
 
-
-/* RIGHT ARROW */
-
 .map-arrow.next {
-    right: 0;
+  right: 8px;
 }
 
 
 /* =========================================
-   DOTS
+   DOT NAVIGATION
    ========================================= */
 
 .map-dots {
-    width: 100%;
+  width: 100%;
 
-    display: flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    justify-content: center;
+  gap: 8px;
 
-    align-items: center;
-
-    gap: 7px;
-
-    margin: 1.25rem auto 0;
+  margin: 1.5rem auto 0;
+  padding: 0;
 }
-
 
 .map-dot {
-    width: 6px;
-    height: 6px;
+  display: block;
 
-    padding: 0;
+  width: 7px;
+  height: 7px;
 
-    border: none;
+  padding: 0;
+  margin: 0;
 
-    border-radius: 50%;
+  border: 0;
+  border-radius: 50%;
 
-    background: #b8b5ae;
+  background: var(--ink-faint);
 
-    cursor: pointer;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
 
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+  opacity: 0.55;
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    background 0.2s ease;
 }
 
+.map-dot:hover {
+  opacity: 0.9;
+  transform: scale(1.2);
+}
 
 .map-dot.active {
-    background: #222;
+  background: var(--ink);
+  opacity: 1;
+  transform: scale(1.15);
+}
 
-    transform: scale(1.15);
+.map-dot:focus-visible {
+  outline: 1px solid var(--accent);
+  outline-offset: 3px;
 }
 
 
 /* =========================================
-   MOBILE
+   MOBILE CATALOGUE
    ========================================= */
 
 @media (max-width: 800px) {
 
-    .map-slider {
-        width: 100%;
+  .map-series {
+    width: 100%;
+    margin-left: 0;
+    padding: 0 24px;
+  }
 
-        padding: 0 30px;
+  .map-slider {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 34px;
+    margin: 0 auto;
+  }
 
-        margin-top: 3rem;
-    }
+  .map-slide {
+    min-height: 0;
 
+    flex-direction: column;
+    gap: 2rem;
+  }
 
-    .map-slide {
-        flex-direction: column;
+  .map-slide img {
+    width: auto;
+    max-width: 100%;
+    height: 500px;
+    flex: none;
+    margin: 0 auto;
+  }
 
-        gap: 2rem;
-    }
+  .map-info {
+    width: 100%;
+    max-width: 350px;
+    flex: none;
+    text-align: center;
+    margin: 0 auto;
+  }
 
+  .map-arrow.prev {
+    left: -2px;
+  }
 
-    .map-slide img {
-        width: auto;
+  .map-arrow.next {
+    right: -2px;
+  }
 
-        max-width: 100%;
-
-        height: 500px;
-    }
-
-
-    .map-info {
-        width: 100%;
-
-        max-width: 350px;
-
-        text-align: center;
-    }
-
-
-    .map-arrow.prev {
-        left: 0;
-    }
-
-
-    .map-arrow.next {
-        right: 0;
-    }
-
+  .map-dots {
+    margin-top: 1.25rem;
+  }
 }
- /* =========================================
-    ACS RESEARCH PROJECT IMAGE SLIDER
-    ========================================= */
+
+
+/* =========================================
+   SMALL PHONES
+   ========================================= */
+
+@media (max-width: 480px) {
+
+  .map-series {
+    padding: 0 16px;
+  }
+
+  .map-slider {
+    padding: 0 28px;
+  }
+
+  .map-slide img {
+    height: 430px;
+  }
+
+  .map-info {
+    max-width: 300px;
+  }
+
+  .map-arrow {
+    width: 34px;
+    height: 34px;
+    font-size: 1.35rem;
+  }
+
+  .map-dot {
+    width: 6px;
+    height: 6px;
+  }
+}
+
+
+/* =========================================
+   ACS RESEARCH PROJECT IMAGE SLIDER
+   ========================================= */
 
 .research-image-slider {
   width: 100%;
@@ -1194,14 +1265,8 @@ section {
   box-sizing: border-box;
 }
 
-
-/* =========================================
-   IMAGE AREA
-   ========================================= */
-
 .research-slider {
   position: relative;
-
   width: 100%;
 
   display: flex;
@@ -1209,12 +1274,8 @@ section {
   align-items: center;
 
   margin: 0 auto;
-
   overflow: hidden;
 }
-
-
-/* Individual slides */
 
 .research-slide {
   display: none;
@@ -1227,71 +1288,44 @@ section {
   margin: 0 auto;
 }
 
-
-/* Active slide */
-
 .research-slide.active {
   display: flex;
 }
-
-
-/* =========================================
-   MAP IMAGE
-   ========================================= */
 
 .research-slide img {
   display: block;
 
   width: auto;
-
   max-width: 100%;
-
   height: 650px;
 
   object-fit: contain;
-
   margin: 0 auto;
 }
 
-
-/* =========================================
-   ARROW NAVIGATION
-   ========================================= */
-
 .research-navigation {
-
   width: 100%;
-
   max-width: 1200px;
 
   margin: 1rem auto 0;
-
   padding: 0;
 
   display: flex;
-
   justify-content: space-between;
-
   align-items: center;
 }
 
-
-/* Arrow buttons */
-
 .research-arrow {
-
   border: none;
-
   background: transparent;
 
-  font-family: "Inter Tight", sans-serif;
+  color: var(--ink);
 
+  font-family: 'Inter Tight', system-ui, sans-serif;
   font-size: 2rem;
 
   cursor: pointer;
-
   padding: 0.5rem 1rem;
-
   margin: 0;
 
   transition:
@@ -1299,57 +1333,31 @@ section {
     opacity 0.2s ease;
 }
 
-
 .research-arrow:hover {
-
   transform: scale(1.2);
-
   opacity: 0.6;
-
 }
-
-
-/* =========================================
-   MOBILE
-   ========================================= */
 
 @media (max-width: 800px) {
 
   .research-image-slider {
-
     width: 100%;
-
     padding: 0 1rem;
-
     margin: 3rem auto 4rem;
-
   }
-
 
   .research-slide img {
-
     width: auto;
-
     max-width: 100%;
-
     height: 450px;
-
   }
-
 
   .research-navigation {
-
     width: 100%;
-
     margin-top: 0.5rem;
-
   }
-
 
   .research-arrow {
-
     font-size: 1.5rem;
-
   }
-
 }
