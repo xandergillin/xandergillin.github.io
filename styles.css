@@ -1219,8 +1219,8 @@ section {
 }
 
 /* =========================================
-    RESEARCH PROJECT IMAGE SLIDER
-    ========================================= */
+   ACS RESEARCH PROJECT IMAGE SLIDER
+   ========================================= */
 
 .research-image-slider {
   width: 100%;
@@ -1228,9 +1228,11 @@ section {
 }
 
 
-.research-slider {
-  position: relative;
+/* =========================================
+   IMAGE AREA
+   ========================================= */
 
+.research-slider {
   width: 100%;
 
   display: flex;
@@ -1241,7 +1243,7 @@ section {
 }
 
 
-/* Individual images */
+/* Individual slides */
 
 .research-slide {
   display: none;
@@ -1253,12 +1255,16 @@ section {
 }
 
 
+/* Show the active image */
+
 .research-slide.active {
   display: flex;
 }
 
 
-/* Map image */
+/* =========================================
+   MAP IMAGES
+   ========================================= */
 
 .research-slide img {
   display: block;
@@ -1267,24 +1273,43 @@ section {
 
   max-width: 1200px;
 
-  height: auto;
+  /*
+    Keeps every image in the same
+    viewing area even if the actual
+    map dimensions are different.
+  */
 
-  max-height: 750px;
+  height: 650px;
 
   object-fit: contain;
 }
 
 
 /* =========================================
-   ARROWS
+   ARROW NAVIGATION
    ========================================= */
 
+.research-navigation {
+
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 1rem auto 0;
+
+  padding: 0 1rem;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+
+/* Arrow buttons */
+
 .research-arrow {
-  position: absolute;
-
-  top: 50%;
-
-  transform: translateY(-50%);
 
   border: none;
 
@@ -1296,9 +1321,7 @@ section {
 
   cursor: pointer;
 
-  padding: 1rem;
-
-  z-index: 10;
+  padding: 0.5rem 1rem;
 
   transition:
     transform 0.2s ease,
@@ -1306,22 +1329,14 @@ section {
 }
 
 
+/* Arrow hover effect */
+
 .research-arrow:hover {
-  transform:
-    translateY(-50%)
-    scale(1.2);
+
+  transform: scale(1.2);
 
   opacity: 0.6;
-}
 
-
-.research-prev {
-  left: 1rem;
-}
-
-
-.research-next {
-  right: 1rem;
 }
 
 
@@ -1332,27 +1347,34 @@ section {
 @media (max-width: 800px) {
 
   .research-image-slider {
+
     margin: 3rem 0 4rem;
+
   }
 
 
   .research-slide img {
-    max-height: 500px;
+
+    height: 450px;
+
+    max-width: 100%;
+
+  }
+
+
+  .research-navigation {
+
+    margin-top: 0.5rem;
+
+    padding: 0 0.5rem;
+
   }
 
 
   .research-arrow {
+
     font-size: 1.5rem;
-  }
 
-
-  .research-prev {
-    left: 0;
-  }
-
-
-  .research-next {
-    right: 0;
   }
 
 }
