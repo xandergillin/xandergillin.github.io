@@ -1,104 +1,404 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title data-page="ACS Uncertainty">Loading...</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=JetBrains+Mono:wght@400;500&family=Inter+Tight:wght@400;500;600&display=swap"
+  rel="stylesheet"
+>
+
 <link rel="stylesheet" href="styles.css">
+
 </head>
+
+
 <body>
 
 <header id="site-header" class="site-header"></header>
 
+
 <main>
+
+
+  <!-- =========================================
+       PROJECT HEADER
+       ========================================= -->
+
   <section class="project-head">
-    <p class="page-eyebrow">Case study · 2026</p>
-    <h1 class="page-title">Hidden Uncertainty in ACS Median Home Value Data</h1>
+
+    <p class="page-eyebrow">
+      Case study · 2026
+    </p>
+
+    <h1 class="page-title">
+      Hidden Uncertainty in ACS Median Home Value Data
+    </h1>
+
     <p class="project-subtitle">
       A study illustrating the exact magnitude of 
       error in American Community Survey Median Home Value 
       estimates through manually calculated county, census tract,
       and block group level data.
     </p>
+
   </section>
 
-  <section class="project-hero">
-    <figure>
-      <img src="images/projects/full3x6.jpg" alt="Parcel and ACS Median Home Value Comparison Across VA Counties" />
-      <figcaption>Map of Our Team's 5-Year MHV Parcel Estimates Within or Outside of ACS 5-Year MHV Estimate Error Bounds.</figcaption>
-    </figure>
+
+
+  <!-- =========================================
+       IMAGE SLIDER
+       ========================================= -->
+
+  <section class="research-image-slider">
+
+    <div class="research-slider">
+
+
+      <!-- IMAGE 1 -->
+
+      <div class="research-slide active">
+
+        <img
+          src="images/projects/Context.jpg"
+          alt="Parcel and ACS Median Home Value Comparison Across VA Counties"
+        >
+
+      </div>
+
+
+      <!-- IMAGE 2 -->
+
+      <div class="research-slide">
+
+        <img
+          src="images/projects/full3x6.jpg"
+          alt="ACS Median Home Value research map"
+        >
+
+      </div>
+
+
+      <!-- IMAGE 3 -->
+
+      <div class="research-slide">
+
+        <img
+          src="images/projects/PctErr_3x3_BG.jpg"
+          alt="ACS Median Home Value research map"
+        >
+
+      </div>
+
+
+      <!-- IMAGE 4 -->
+
+      <div class="research-slide">
+
+        <img
+          src="images/projects/PctErr_3x3_Tract.jpg"
+          alt="ACS Median Home Value research map"
+        >
+
+      </div>
+
+
+      <!-- IMAGE 5 -->
+
+      <div class="research-slide">
+
+        <img
+          src="images/projects/RichmondPctErrBG.jpg"
+          alt="ACS Median Home Value richmond research map"
+        >
+
+      </div>
+
+
+      <!-- IMAGE 6 -->
+
+      <div class="research-slide">
+
+        <img
+          src="images/projects/RichmondPctErrTract.jpg"
+          alt="ACS Median Home Value research map"
+        >
+
+      </div>
+
+
+      <!-- IMAGE 7 -->
+
+      <div class="research-slide">
+
+        <img
+          src="images/projects/my-project-thumb.jpg"
+          alt="ACS Median Home Value research map"
+        >
+
+      </div>
+
+
+      <!-- PREVIOUS ARROW -->
+
+      <button
+        class="research-arrow research-prev"
+        onclick="changeResearchImage(-1)"
+        aria-label="Previous image"
+      >
+        ←
+      </button>
+
+
+      <!-- NEXT ARROW -->
+
+      <button
+        class="research-arrow research-next"
+        onclick="changeResearchImage(1)"
+        aria-label="Next image"
+      >
+        →
+      </button>
+
+
+    </div>
+
   </section>
+
+
+
+  <!-- =========================================
+       PROJECT TEXT
+       ========================================= -->
 
   <section class="project-prose">
-    <h2 class="prose-h2">Overview</h2>
 
-    <h3>What were we trying to find out?</h3>
+    <h2 class="prose-h2">
+      Overview
+    </h2>
+
+
+    <h3>
+      What were we trying to find out?
+    </h3>
+
     <p>
-        We wanted to determine how well ACS 5-year Median Home Value (MHV)
-        estimates represent actual housing values. Specifically, we asked
-        whether ACS estimates accurately reflect the residential landscape
-        and how closely they compare with authoritative property-assessment data.
+      We wanted to determine how well ACS 5-year Median Home Value (MHV)
+      estimates represent actual housing values. Specifically, we asked
+      whether ACS estimates accurately reflect the residential landscape
+      and how closely they compare with authoritative property-assessment data.
     </p>
 
-    <h3>Our Approach and Methods</h3>
-    <p>
-        We collected property-assessment data from Richmond City, Henrico County,
-        and Powhatan County, representing urban, suburban, and rural areas.
-        We cleaned and inflation-adjusted 2018–2024 assessment data, removed
-        non-residential and incomplete records, and calculated median home values
-        by Census tract and block group.
-    </p>
+
+    <h3>
+      Our Approach and Methods
+    </h3>
 
     <p>
-        In Richmond City, we also identified owner-occupied parcels to create
-        a closer comparison with the ACS. We compared our parcel-based estimates
-        against ACS 1-year and 5-year MHV estimates, examining percentage error,
-        ACS margins of error, and correlations between the two datasets.
-    </p>
-
-    <h3>Our Results</h3>
-    <p>
-        ACS estimates showed strong correlations with parcel-based values,
-        generally capturing the spatial pattern of housing values. However,
-        the estimates often differed substantially in magnitude. Only
-        <strong>17.4% of tract comparisons and 29.2% of block-group comparisons</strong>
-        fell within the ACS margin of error, while parcel-based estimates were
-        generally lower than ACS estimates.
-    </p>
-
-    <h3>What I Learned</h3>
-    <p>
-        The key takeaway was that <strong>strong correlation does not necessarily
-        mean accurate agreement.</strong> ACS MHV can be useful for identifying
-        broad spatial patterns, but researchers should be cautious about treating
-        it as a precise measure of neighborhood housing values.
+      We collected property-assessment data from Richmond City, Henrico County,
+      and Powhatan County, representing urban, suburban, and rural areas.
+      We cleaned and inflation-adjusted 2018–2024 assessment data, removed
+      non-residential and incomplete records, and calculated median home values
+      by Census tract and block group.
     </p>
 
     <p>
-        The project also showed the value—and limitations—of using administrative
-        data to evaluate survey-based estimates. Data availability and
-        locality-specific record structures strongly influence what questions
-        can actually be answered.
+      In Richmond City, we also identified owner-occupied parcels to create
+      a closer comparison with the ACS. We compared our parcel-based estimates
+      against ACS 1-year and 5-year MHV estimates, examining percentage error,
+      ACS margins of error, and correlations between the two datasets.
     </p>
-</section>
 
- <section class="project-poster">
-    <figure>
-      <img src="images/projects/my-project-thumb.jpg" alt="Final project poster presenting findings on uncertainty in ACS Median Home Value estimates" />
-      <figcaption>Final project poster summarizing our methods, analysis, and findings.</figcaption>
-    </figure>
+
+    <h3>
+      Our Results
+    </h3>
+
+    <p>
+      ACS estimates showed strong correlations with parcel-based values,
+      generally capturing the spatial pattern of housing values. However,
+      the estimates often differed substantially in magnitude. Only
+      <strong>17.4% of tract comparisons and 29.2% of block-group comparisons</strong>
+      fell within the ACS margin of error, while parcel-based estimates were
+      generally lower than ACS estimates.
+    </p>
+
+
+    <h3>
+      What I Learned
+    </h3>
+
+    <p>
+      The key takeaway was that <strong>strong correlation does not necessarily
+      mean accurate agreement.</strong> ACS MHV can be useful for identifying
+      broad spatial patterns, but researchers should be cautious about treating
+      it as a precise measure of neighborhood housing values.
+    </p>
+
+    <p>
+      The project also showed the value—and limitations—of using administrative
+      data to evaluate survey-based estimates. Data availability and
+      locality-specific record structures strongly influence what questions
+      can actually be answered.
+    </p>
+
   </section>
+
+
+
+  <!-- =========================================
+       PROJECT POSTER
+       ========================================= -->
+
+  <section class="project-poster">
+
+    <figure>
+
+      <img
+        src="images/projects/my-project-thumb.jpg"
+        alt="Final project poster presenting findings on uncertainty in ACS Median Home Value estimates"
+      >
+
+      <figcaption>
+        Final project poster summarizing our methods, analysis, and findings.
+      </figcaption>
+
+    </figure>
+
+  </section>
+
+
+
+  <!-- =========================================
+       BACK TO PROJECTS
+       ========================================= -->
 
   <section class="project-back">
-    <a href="projects.html" class="link-primary">← Back to all work</a>
+
+    <a href="projects.html" class="link-primary">
+      ← Back to all work
+    </a>
+
   </section>
+
+
 </main>
 
+
 <footer id="site-footer" class="site-footer"></footer>
+
+
 <script src="config.js"></script>
 <script src="components.js"></script>
+
+
+<!-- =========================================
+     RESEARCH IMAGE SLIDER JAVASCRIPT
+     ========================================= -->
+
+<script>
+
+  let currentResearchImage = 0;
+
+  const researchSlides =
+    document.querySelectorAll(".research-slide");
+
+
+  function showResearchImage(index) {
+
+    /*
+      Go back to the first image
+      after reaching the last image.
+    */
+
+    if (index >= researchSlides.length) {
+
+      currentResearchImage = 0;
+
+    }
+
+
+    /*
+      Go to the last image if
+      the user goes backward from
+      the first image.
+    */
+
+    else if (index < 0) {
+
+      currentResearchImage =
+        researchSlides.length - 1;
+
+    }
+
+
+    else {
+
+      currentResearchImage = index;
+
+    }
+
+
+    /*
+      Show only the current image.
+    */
+
+    researchSlides.forEach((slide, i) => {
+
+      slide.classList.toggle(
+        "active",
+        i === currentResearchImage
+      );
+
+    });
+
+  }
+
+
+  /*
+    Change images when an arrow
+    is clicked.
+  */
+
+  function changeResearchImage(direction) {
+
+    showResearchImage(
+      currentResearchImage + direction
+    );
+
+  }
+
+
+  /*
+    Allow keyboard navigation
+    with the left and right arrows.
+  */
+
+  document.addEventListener("keydown", function(event) {
+
+    if (event.key === "ArrowRight") {
+
+      changeResearchImage(1);
+
+    }
+
+    if (event.key === "ArrowLeft") {
+
+      changeResearchImage(-1);
+
+    }
+
+  });
+
+</script>
+
+
 </body>
 </html>
