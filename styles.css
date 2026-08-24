@@ -32,7 +32,7 @@
 }
 */
 
-/* ---------- THEME 2: ATLAS ---------- 
+/* ---------- THEME 2: ATLAS ---------- */
 :root {
   --bg:           #f1ece0;
   --bg-alt:       #e6dfd0;
@@ -44,7 +44,7 @@
   --accent-soft:  #f0d9bc;
   --paper-grain:  rgba(0, 0, 0, 0.02);
 }
-*/
+
 
 /* ---------- THEME 3: TERRAIN ---------- 
 :root {
@@ -74,7 +74,7 @@
 }
 */
 
-/* ---------- THEME 5: RISOGRAPH ---------- */
+/* ---------- THEME 5: RISOGRAPH ---------- 
 :root {
   --bg:           #f5f1ea;
   --bg-alt:       #ece6db;
@@ -86,7 +86,7 @@
   --accent-soft:  #fbd7cf;
   --paper-grain:  rgba(0, 0, 0, 0.022);
 }
-
+*/
 
 
 /* ============================================================
