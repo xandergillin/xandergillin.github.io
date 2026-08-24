@@ -32,7 +32,7 @@
 }
 */
 
-/* ---------- THEME 2: ATLAS ----------
+/* ---------- THEME 2: ATLAS ---------- */
 :root {
   --bg:           #f1ece0;
   --bg-alt:       #e6dfd0;
@@ -44,7 +44,7 @@
   --accent-soft:  #f0d9bc;
   --paper-grain:  rgba(0, 0, 0, 0.02);
 }
-*/
+
 
 /* ---------- THEME 3: TERRAIN ----------
 :root {
@@ -60,7 +60,7 @@
 }
 */
 
-/* ---------- THEME 4: NOCTURNE ---------- */
+/* ---------- THEME 4: NOCTURNE ---------- 
 :root {
   --bg:           #15181c;
   --bg-alt:       #1c2026;
@@ -72,7 +72,7 @@
   --accent-soft:  #3a2f1c;
   --paper-grain:  rgba(255, 255, 255, 0.015);
 }
-
+*/
 
 /* ---------- THEME 5: RISOGRAPH ----------
 :root {
