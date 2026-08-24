@@ -46,7 +46,7 @@
 }
 */
 
-/* ---------- THEME 3: TERRAIN ---------- */
+/* ---------- THEME 3: TERRAIN ---------- 
 :root {
   --bg:           #f3efe6;
   --bg-alt:       #e8e2d3;
@@ -58,7 +58,7 @@
   --accent-soft:  #dbe5c8;
   --paper-grain:  rgba(0, 0, 0, 0.02);
 }
-
+*/
 
 /* ---------- THEME 4: NOCTURNE ---------- 
 :root {
@@ -74,7 +74,7 @@
 }
 */
 
-/* ---------- THEME 5: RISOGRAPH ----------
+/* ---------- THEME 5: RISOGRAPH ---------- */
 :root {
   --bg:           #f5f1ea;
   --bg-alt:       #ece6db;
@@ -86,7 +86,7 @@
   --accent-soft:  #fbd7cf;
   --paper-grain:  rgba(0, 0, 0, 0.022);
 }
-*/
+
 
 
 /* ============================================================
