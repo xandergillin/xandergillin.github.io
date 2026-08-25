@@ -1063,6 +1063,8 @@ section {
 .map-arrow {
     position: static;
 
+    color: var(--ink);
+
     width: 42px;
     height: 42px;
 
