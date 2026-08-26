@@ -104,7 +104,13 @@ const CONFIG = {
       role: "Undergraduate Research Fellow",
       org: "Spatial Analysis Lab, University of Richmond",
       years: "Summer 2026",
-      blurb: "Worked with a small research team on American Community Survey uncertainty analysis under Dr. Redican."
+      blurb: "2026 University of Richmond's School of Arts and Sciences Summer Research Fellowship Award Winner (>$6,000 funding awarded).
+              Assessed and mitigated home value uncertainty in American Community Survey (ACS) data with Dr. Kyle Redican, 
+              through a three-county case study validating owner-occupied home value estimates against county tax records.
+              Led the project's cartographic design, producing publication-quality maps in ArcGIS Pro that communicated patterns 
+              of home value uncertainty across the study area Processed, analyzed, and visualized spatial and aspatial data using 
+              R and ArcGIS Pro. Presented results presented at the 2026 GeoCon (Virginia Association of Mapping and Land Information 
+              Systems Conference) and 2027 American Association of Geographers (AAG) Conferences."
     }
   ],
 
